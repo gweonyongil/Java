@@ -1,0 +1,34 @@
+package controller.textviewer;
+
+import model.compare.CompareLine;
+import view.Text;
+
+public class TextViewerSearchController {
+	private CompareLine compareline;
+	private Text lefttext;
+	private Text righttext;
+	private int linesetcolorindex;
+	
+	String left_contents;
+	String right_contents;
+	public TextViewerSearchController()
+	{
+		
+	}
+	public void nextDiff()
+	{
+		
+	}
+	public void prevDiff()
+	{
+		
+	}
+	public void firstDiff()
+	{
+		
+	}
+	public void lastDiff()
+	{
+		
+	}
+}

@@ -1,0 +1,15 @@
+package controller.textviewer;
+
+public class TextViewerSearchController {
+	private CompareLine compareline;
+	private Text lefttext;
+	Text righttext;
+	private JScrollPane lefttext_scroll;
+	private JScrollPane righttext_scroll;
+	private ArrayList<Line> left_notcomparedlines;
+	private ArrayList<Line> right_notcomparedlines;
+	private ArrayList<Line> compared_left_lines;
+	private ArrayList<Line> compared_right_lines;
+	private Document doc;
+	private MergeLine mrgline;
+}

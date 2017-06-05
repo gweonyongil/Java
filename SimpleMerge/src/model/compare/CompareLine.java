@@ -150,6 +150,17 @@ public class CompareLine implements CmpLine{
 				compared_right.add(compared_right_line);
 			}
 		}
+		
+		int gap_line_num = compared_left.size() - compared_right.size();
+		if(gap_line_num > 0){
+			for(int i = 0; i < gap_line_num; i ++){
+				compared_right.add(blank_line);
+			}
+		}else{
+			for(int i = 0; i < (-gap_line_num); i ++){
+				compared_left.add(blank_line);
+			}
+		}
 	}
 	
 	public ArrayList<Line> getComparedLeft(){

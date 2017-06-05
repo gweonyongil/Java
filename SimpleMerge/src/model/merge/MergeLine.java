@@ -2,6 +2,7 @@ package model.merge;
 
 import java.util.ArrayList;
 
+import model.compare.ComparedLine;
 import model.compare.Line;
 
 public class MergeLine implements MrgLine{
@@ -9,9 +10,8 @@ public class MergeLine implements MrgLine{
 	{
 		for(int i = start_line; i <= end_line; i++)
 		{
-			dest_contents.get(i).line = src_contents.get(i).line;
-			System.out.println(dest_contents.get(i).line);
+			ComparedLine line = new ComparedLine(src_contents.get(i).line);
+			dest_contents.set(i, line);
 		}
-		System.out.println(dest_contents.get(0).line);
 	}
 }

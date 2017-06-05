@@ -1,0 +1,21 @@
+package controller.textviewer;
+
+import view.Text;
+
+public class NextDiff {
+	private Text lefttext;
+	private Text righttext;
+	private String left_contents;
+	private String right_contents;
+	int linesetcolorindex;
+	public NextDiff(Text lefttext, Text righttext, String left_contents, String right_contents)
+	{
+		this.lefttext = lefttext;
+		this.righttext = righttext;
+		left_contents = new String(left_contents);
+		right_contents = new String(right_contents);
+	}
+	public void 
+	
+	
+}
