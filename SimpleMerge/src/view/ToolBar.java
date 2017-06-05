@@ -69,9 +69,19 @@ public class ToolBar extends JToolBar {
             s.LeftStoreFile(textviewer);
 
          } else if (button.getActionCommand().equals(ToolBarButtons.ShiftRight.name())) {
-
+        	 try {
+				textviewer.shiftRight();
+			} catch (BadLocationException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
          } else if (button.getActionCommand().equals(ToolBarButtons.ShiftLeft.name())) {
-
+        	 try {
+				textviewer.shiftLeft();
+			} catch (BadLocationException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
          } else if (button.getActionCommand().equals(ToolBarButtons.Undo.name())) {
 
          } else if (button.getActionCommand().equals(ToolBarButtons.Redo.name())) {
@@ -110,7 +120,7 @@ public class ToolBar extends JToolBar {
 
          } else if (button.getActionCommand().equals(ToolBarButtons.F5.name())) {
             textviewer.highliteText();
-            button.setVisible(false);
+            //button.setEnabled(false);
          }
       }
    }
